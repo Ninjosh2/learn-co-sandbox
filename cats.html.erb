@@ -1,0 +1,9 @@
+<%= form_tag("/cats") do %>
+  <%= label_tag('cat[name]', "Name") %>
+  <%= text_field_tag('cat[name]') %>
+ 
+  <%= label_tag('cat[color]', "Color") %>
+  <%= text_field_tag('cat[color]') %>
+ 
+  <%= submit_tag "Create Cat" %>
+<% end %>
